@@ -11,7 +11,7 @@ public abstract class CalcThread extends Thread {
     private double x1;
     private double x2;
     private double h;
-    private Resources resources;
+    private final Resources resources;
     private String funcName;
 
     public CalcThread(double x1, double x2, double h, String funcName, Resources resources) {

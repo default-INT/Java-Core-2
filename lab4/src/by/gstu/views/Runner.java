@@ -13,13 +13,13 @@ import by.gstu.models.Resources;
 public class Runner {
     public static void main(String[] args) throws InterruptedException {
         Resources resources = Resources.getInstance();
-        CalcThread sinThread = new CalcThread(0, 0.5, 0.1, "sin", resources) {
+        CalcThread sinThread = new CalcThread(0, 5.5, 0.1, "sin", resources) {
             @Override
             public double Func(double x) {
                 return Math.sin(x);
             }
         };
-        CalcThread cosThread = new CalcThread(0.5, 1, 0.1, "cos", resources) {
+        CalcThread cosThread = new CalcThread(5.5, 10, 0.1, "cos", resources) {
             @Override
             public double Func(double x) {
                 return Math.cos(x);

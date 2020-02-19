@@ -12,7 +12,7 @@ import java.util.Queue;
 public class Resources {
     private static Resources instance;
     private  Queue<String> resources;
-    private int length = 4;
+    private int length = 3;
     private int count;
 
     private Resources() {
