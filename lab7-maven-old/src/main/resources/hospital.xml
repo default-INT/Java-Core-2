@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<hospital>
+    <name>Мозырская больница</name>
+    <doctors>
+        <doctor id="1" fullName="Трофимов Е.В."/>
+        <doctor id="2" fullName="Ропот И.В." />
+        <medicalStaff id="3" fullName="Главич Д.Ю." />
+    </doctors>
+    <patients>
+        <patient id="4" fullName="Липский Д.Ю." doctorId="2" diagnosis="Коронавирус">
+            <destinations>
+                <destination name="Ибуфен" type="drug" />
+                <destination name="Ингаляция" type="procedure" />
+            </destinations>
+        </patient>
+        <patient id="5" fullName="Солодков М.А." doctorId="1" diagnosis="Грип">
+            <destinations>
+                <destination name="Процетамол" type="drug" />
+                <destination name="Ингаляция" type="procedure" />
+            </destinations>
+        </patient>
+        <patient id="6" fullName="Семёнов Д.С." doctorId="1" diagnosis="Здоров"/>
+        <patient id="7" fullName="Межейников А.С." doctorId="1" diagnosis="Аппендицит">
+            <destinations>
+                <destination name="Операция по удалению аппендицита" type="operation" />
+            </destinations>
+        </patient>
+    </patients>
+</hospital>
